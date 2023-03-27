@@ -1,7 +1,6 @@
 import React from 'react'
 import './Bucket.css'
 import {TbDots} from 'react-icons/tb' 
-import {MdOutlineDelete} from 'react-icons/md'
 import Card from '../Card/Card'
 import CardModal from '../CardModal/CardModal'
 
