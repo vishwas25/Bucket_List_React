@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*, 
+*::after, 
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: skyblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main-outer-container,
+.history {
+  min-width: fit-content;
+  position: relative;
+  padding: 10px;
   min-height: 100vh;
+}
+
+.main-outer-container > .top,
+.history > .top {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 1440px;
+}
+
+.main-outer-container > .top > a,
+.history > .top > a {
+  margin-left: auto;
+  text-decoration: none;
+  color: #8566aa;
+  border: 1px solid #8566aa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.main-inner-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.history-main-container {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.history-main-container > .single-log {
+  background-color: #8566aa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(166, 166, 166, 0.3);
+	background-color: #8566aa;
+
+}
+
+::-webkit-scrollbar
+{
+  
+	width: 10px;
+	background-color: #8566aa;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #8566aa;
+	border: 1px solid rgb(228, 228, 228);
+  border-radius: 50px;
 }
