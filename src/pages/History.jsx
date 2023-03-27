@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const History = () => {
 
     const [historyList, setHistoryList] = React.useState(JSON.parse(localStorage.getItem('history')) || [] )
-
+    console.log(setHistoryList);
     return (
         <div className='history'>
             <div className="top">
